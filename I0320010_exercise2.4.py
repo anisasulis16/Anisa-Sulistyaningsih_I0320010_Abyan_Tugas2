@@ -1,6 +1,6 @@
 #menampilkan informasi program
 
-print("Konversi suhu (Farenheit ke Celcius)")
+print("Konversi suhu (Fahrenheit ke Celcius)")
 
 #input suhu dalam fahrenheit
 F = float(input("Masukkan suhu(fahrenheit): "))
