@@ -61,6 +61,7 @@ C = float(input("Masukkan nilai suhu(Celcius): "))
 F = (9 / 5 * C) + 32
 
 #Menampilkan hasil konversi suhu Celcius ke Fahrenheit
+print("Suhu Celcius: ", C)
 print("Suhu Fahrenheit: ", F)
 
 print("...........................")
@@ -76,5 +77,6 @@ R = float(input("Masukkan nilai suhu(Reamur): "))
 K = (5 / 4 * R) + 273
 
 #Menampilkan hasil konversi suhu Reamur ke Kelvin
+print("Suhu Celcius: ", C)
 print("Suhu Kelvin: ", K)
 print("...........................")
