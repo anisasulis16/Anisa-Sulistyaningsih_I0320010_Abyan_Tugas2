@@ -1,82 +1,106 @@
-#Program Perhitungan
-print("Program Perhitungan Luas")
+#Informasi Program Perhitungan
+print("Informasi Program Perhitungan: ")
+print("1. Luas Persegi Panjang")
+print("2. Luas Lingkaran")
+print("3. Luas Kubus")
+print("4. Konversi suhu Celcius ke Fahrenheit")
+print("5. Konversi Suhu Reamur ke Kelvin")
 print("........................")
 
-#Menghitung Luas Persegi Panjang
+def menu():
+    print("Program Perhitungan:")
+    print("1. Luas Persegi Panjang")
+    print("2. Luas Lingkaran")
+    print("3. Luas Kubus")
+    print("4. Konversi suhu Celcius ke Fahrenheit")
+    print("5. Konversi Suhu Reamur ke Kelvin")
 
-#Menampilkan informasi program Perhitungan
-print("Perhitungan Luas Persegi Panjang")
+menu = input("Pilih Program Perhitungan : ")
 
-#Menginputkan nilai variabel panjang dan lebar
-panjang = float(input("Masukkan nilai panjang: "))
-lebar = float(input("Masukkan nilai lebar: "))
+if menu=="1":
+    #Menghitung Luas Persegi Panjang
 
-#Memproses luas persegi panjang
-luas_persegi_panjang = panjang * lebar
+    #Menampilkan informasi program Perhitungan
+    print("Perhitungan Luas Persegi Panjang")
 
-#Menampilkan Hasil luas persegi panjang
-print("Luas Persegi Panjang: ", luas_persegi_panjang)
+    #Menginputkan nilai variabel panjang dan lebar
+    panjang = float(input("Masukkan nilai panjang: "))
+    lebar = float(input("Masukkan nilai lebar: "))
 
-print("..........................")
-#Menghitung Luas Lingkaran
+    #Memproses luas persegi panjang
+    luas_persegi_panjang = panjang * lebar
 
-#Menampilkan informasi program perhitungan
-print("Perhitungan Luas Lingkaran")
+    #Menampilkan Hasil luas persegi panjang
+    print("Luas Persegi Panjang: ", luas_persegi_panjang)
 
-#Menginputkan nilai variabel phi dan r
-phi = 22/7
-r = float(input("Masukkan nilai jari-jari: "))
+    print("..........................")
 
-#Memproses Luas Lingkaran
-luas_lingkaran = phi * r * r
+if menu=="2":
+    #Menghitung Luas Lingkaran
 
-#Menampilkan Hasil Luas Lingkaran
-print("Luas Lingkaran: ", luas_lingkaran)
+    #Menampilkan informasi program perhitungan
+    print("Perhitungan Luas Lingkaran")
 
-print("..........................")
-#Menghitung Luas Kubus
+    #Menginputkan nilai variabel phi dan r
+    phi = 22/7
+    r = float(input("Masukkan nilai jari-jari: "))
 
-#Menampilkan informas program perhitungan
-print("Perhitungan Luas Kubus")
+    #Memproses Luas Lingkaran
+    luas_lingkaran = phi * r * r
 
-#Menginputkan nilai variabel s
-s = float(input("Masukkan nilai sisi: "))
+    #Menampilkan Hasil Luas Lingkaran
+    print("Luas Lingkaran: ", luas_lingkaran)
 
-#Memproses Luas Kubus
-luas_kubus = 6 * s * s
+    print("..........................")
 
-#Manampilkan Hasil Luas Kubus
-print("Luas Kubus: ", luas_kubus)
+if menu=="3":
+    #Menghitung Luas Kubus
 
-print("...........................")
-#Menghitung Konversi suhu Celcius  ke Fahrenheit
+    #Menampilkan informas program perhitungan
+    print("Perhitungan Luas Kubus")
 
-#Menampilkan informasi program perhitungan
-print("Mengitung Konversi Suhu Celcius ke Fahrenheit")
+    #Menginputkan nilai variabel s
+    s = float(input("Masukkan nilai sisi: "))
 
-#Menginputkan nilai variabel  suhu celcius
-C = float(input("Masukkan nilai suhu(Celcius): "))
+    #Memproses Luas Kubus
+    luas_kubus = 6 * s * s
 
-#Memproses Konversi suhu Celcius ke fahrenheit
-F = (9 / 5 * C) + 32
+    #Manampilkan Hasil Luas Kubus
+    print("Luas Kubus: ", luas_kubus)
 
-#Menampilkan hasil konversi suhu Celcius ke Fahrenheit
-print("Suhu Celcius: ", C)
-print("Suhu Fahrenheit: ", F)
+    print("...........................")
 
-print("...........................")
-#Menghitung Konversi suhu Reamur ke Kelvin
+if menu=="4":
+    #Menghitung Konversi suhu Celcius  ke Fahrenheit
 
-#Menampilkan informasi program perhitungan
-print("Mengitung Konversi Suhu Reamur ke Kelvin")
+    #Menampilkan informasi program perhitungan
+    print("Mengitung Konversi Suhu Celcius ke Fahrenheit")
 
-#Menginputkan nilai variabel  suhu reamur
-R = float(input("Masukkan nilai suhu(Reamur): "))
+    #Menginputkan nilai variabel  suhu celcius
+    C = float(input("Masukkan nilai suhu(Celcius): "))
 
-#Memproses Konversi suhu Reamur ke Kelvin
-K = (5 / 4 * R) + 273
+    #Memproses Konversi suhu Celcius ke fahrenheit
+    F = (9 / 5 * C) + 32
 
-#Menampilkan hasil konversi suhu Reamur ke Kelvin
-print("Suhu Celcius: ", C)
-print("Suhu Kelvin: ", K)
-print("...........................")
+    #Menampilkan hasil konversi suhu Celcius ke Fahrenheit
+    print("Suhu Celcius: ", C)
+    print("Suhu Fahrenheit: ", F)
+
+    print("...........................")
+
+if menu=="5":
+    #Menghitung Konversi suhu Reamur ke Kelvin
+
+    #Menampilkan informasi program perhitungan
+    print("Mengitung Konversi Suhu Reamur ke Kelvin")
+
+    #Menginputkan nilai variabel  suhu reamur
+    R = float(input("Masukkan nilai suhu(Reamur): "))
+
+    #Memproses Konversi suhu Reamur ke Kelvin
+    K = (5 / 4 * R) + 273
+
+    #Menampilkan hasil konversi suhu Reamur ke Kelvin
+    print("Suhu Reamur: ", R)
+    print("Suhu Kelvin: ", K)
+    print("...........................")
